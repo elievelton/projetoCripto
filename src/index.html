@@ -22,12 +22,25 @@
         
         h1 {
             color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .price-container {
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         #price {
             font-size: 24px;
-            color: #007bff;
-            margin-top: 20px;
+        }
+
+        .price-container.green {
+            background-color: lightgreen;
+        }
+
+        .price-container.red {
+            background-color: lightcoral;
         }
         
         .error {
@@ -37,13 +50,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Preço corrente da Cripto</h1>
-        <p id="price">Carregando os dados...</p>
+        <h1>Preço Atual da Criptomoeda</h1>
+        <div id="price" class="price-container">Carregando os dados...</div>
         <p id="error" class="error"></p>
     </div>
+    
     <script src="renderer.js"></script>
 </body>
 </html>
-
-
-

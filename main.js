@@ -9,6 +9,7 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
+            
             nodeIntegration: true, // Permite o uso de APIs do Node.js na renderização da página
             contextIsolation: false // Desativa o isolamento de contexto para acessar variáveis globais no renderer process
         }
