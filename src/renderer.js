@@ -1,9 +1,9 @@
 const axios = require('axios');
 
 const symbol = 'BTCUSD';
-const alertPercentage = 0.01; // Porcentagem para o alerta de queda ou de alta
+const alertPercentage = 5; // Porcentagem para o alerta de queda ou de alta
 const intervalSeconds = 2; // Intervalo de atualização em segundos
-const alertIntervalSeconds = 1; // Intervalo para verificar a porcentagem de mudança em segundos
+const alertIntervalSeconds = 60; // Intervalo para verificar a porcentagem de mudança em segundos
 let previousPrice = 0; // Armazena o preço anterior
 let startTime = Date.now(); // Tempo inicial
 

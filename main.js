@@ -4,7 +4,7 @@ const path = require('path');
 
 // Função para criar a janela principal
 function createWindow() {
-    // Cria uma nova janela do navegador
+    // Criando uma nova janela do navegador
     const mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
